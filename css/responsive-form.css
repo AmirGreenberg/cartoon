@@ -1,0 +1,160 @@
+@media only screen and (max-width : 1024px) {    
+    div#cartoon_form, div#cartoon_form_results{
+        width:100% !important;
+        height:auto !important;
+    }
+    
+    div#cartoon_form_results{
+        top:2rem !important;
+    }
+    
+    div#cartoon_form_results button{
+        margin:1rem;
+    }
+    
+    div#settings{
+        width:100% !important;
+        padding: 1rem 1rem !important;
+    }
+    div#banner{
+        display:none;
+    }
+    
+    div#cartoon_form div#settings span{
+        margin:2rem 0rem;
+        padding: 0px 1rem !important;
+        width: 50%;
+        display: inline;        
+    }
+    
+    div#other_effects{
+        width: 100% !important;
+        height: 160px !important;
+        overflow-y: hidden !important;
+        overflow-x: scroll !important;
+    }
+    
+    div#other_effects>div{
+        width:max-content;
+    }
+    
+    div#other_effects div.effect {
+        width:150px !important;
+        margin:1rem !important;
+    }
+    
+    div#other_effects div.effect img{
+        max-height: 140px;
+    }    
+}
+
+@media only screen and (max-width : 980px){
+    div#hero{
+        height:max-content;
+    }
+    div#cartoon_form{
+        width:700px !important;
+        height:270px !important;
+    }
+    
+    
+    div#settings{
+        width: 90% !important;
+        padding: 2rem 1rem !important;
+        margin: 0 auto !important;
+        float: none !important;
+    }
+    div#banner{
+        width:250px !important;
+    }
+    
+    div#other_effects{
+        width:160px !important;
+    }
+    
+    div#cartoon_form_results{
+        float:right;
+    }
+    
+    div#cartoon_form_results div#cartoon img#result_img {
+        max-height: 360px !important;
+    }
+
+
+
+    div#other_effects{
+        width: 100% !important;
+        height: 160px !important;
+        overflow-y: hidden !important;
+        overflow-x: scroll !important;
+    }
+    
+    div#other_effects>div{
+        width:max-content;
+    }
+    
+    div#other_effects div.effect {
+        width:150px !important;
+        margin:1rem !important;
+    }
+    
+    div#other_effects div.effect img{
+        max-height: 140px;
+    }
+
+}
+
+@media only screen and (max-width : 640px){
+    div#cartoon_form, div#cartoon_form_results{
+        width:100% !important;
+        height:auto !important;
+    }
+    
+    div#cartoon_form_results{
+        top:2rem !important;
+    }
+    
+    div#cartoon_form_results button{
+        margin:0.22rem;
+    }
+    
+    div#settings{
+        width:100% !important;
+        padding: 1rem 1rem !important;
+    }
+    div#banner{
+        display:none;
+    }
+    
+    div#cartoon_form div#settings span{
+        display:block;
+        margin:2rem 0rem;
+        padding: 0px 1rem !important;
+    }
+    
+    div#other_effects{
+        width: 100% !important;
+        height: 160px !important;
+        overflow-y: hidden !important;
+        overflow-x: scroll !important;
+    }
+    
+    div#other_effects>div{
+        width:max-content;
+    }
+    
+    div#other_effects div.effect {
+        width:150px !important;
+        margin:1rem !important;
+    }
+    
+    div#other_effects div.effect img{
+        max-height: 140px;
+    }
+}
+
+@media only screen and (max-width : 480px){
+    
+}
+
+@media only screen and (max-width : 320px){}

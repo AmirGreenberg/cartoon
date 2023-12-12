@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="author" content="Photocartoon">
+    <title>PhotoCartoon.net | FREE Photo to Cartoon Converter (Online)</title>
+	<meta name="thumbnail" content="/img/photo-to-cartoon.png" />
+	<meta name="description" content="Cartoonize yourself or convert any other photo to cartoon in just one click. Photo Cartoon is a web-based application to turn photos into cartoon directly online and for free. Try it now: click on the upload button to import your photo and press Convert to view your cartoonized version." />
+    <!-- ===========================
+    FAVICONS
+    =========================== -->
+    <link rel="icon" href="/favicon.png">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><!-- X -->
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-touch-icon-ipad-retina.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-iphone-retina.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon-iphone.png" />
+     
+    <!-- ===========================
+    STYLESHEETS
+    =========================== -->    
+    
+<style>
+
+    div.container2 { display: flex;}
+    .container2 div{ margin: 1em;}
+    @media screen and (max-width: 480px)
+    {  
+        div.container2
+        {  
+            flex-direction: column;  
+        }
+        
+          #savehdbtn {
+              display: none;
+         }
+         
+         div#cartoon_form, div#cartoon_form_results {
+             margin: 2rem auto 10rem auto;
+        }
+        
+        #linkwin{
+              display: none;
+         }
+        #lhnHocButton {
+    display: none!important;
+        }  
+    
+    }
+    
+    
+    
+    .buttonx {
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 19px 38px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 38px;
+    margin: 16px 0px;
+}
+
+#ads {
+z-index:100; 
+position: fixed; 
+bottom:10px; 
+text-align: center; 
+padding: 6px; 
+width: 100%;
+}
+
+
+@media only screen and (max-width: 799px) {
+#ads {
+z-index:100; 
+position: fixed; 
+bottom:80px; 
+text-align: center; 
+padding: 3px; 
+width: 100%;
+}
+}
+
+
+</style>
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!--
+    <link rel="stylesheet" href="/css/preloader.css">
+    -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/responsive-form.css">
+    <!--
+    <link rel="stylesheet" href="/css/animate.css">
+    -->
+        
+    <!-- ===========================
+    ICONS
+    =========================== -->
+    <link rel="stylesheet" href="/css/simple-line-icons.css">    
+    
+    <!-- ===========================
+    GOOGLE FONTS
+    =========================== -->    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+   
+    <script src="/js/jquery.ui.touch-punch.min.js"></script>
+
+
+  <!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="1f1ef766-49b2-4032-b5b7-2cef00c6ec9a" data-blockingmode="auto" type="text/javascript"></script>    -->
+
+
+  <!-- ===========================
+   GOOGLE ANALYTICS (Optional)
+   =========================== -->
+
+    <!--Replace this line with your analytics code-->
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160838789-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-160838789-1');
+</script>
+
+    <!-- Analytics end-->
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4875027129723585"
+     crossorigin="anonymous"></script>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<!--   <script src="https://code.jquery.com/jquery-latest.min.js"></script>   -->
+ <script src="https://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+<!-- <script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script> -->
+  
+   </head>
+   <!-- <body data-spy="scroll">  -->
+   <body>
+<div id="ads">
+<p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- photocartoon_pagina_risultato -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-4875027129723585"
+     data-ad-slot="7634360519"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</p>
+</div>
+        <!-- Preloader -->
+        <!--
+        <div id="preloader">           
+            <div id="status">
+                <div class="loadicon icon-moustache wow tada infinite" data-wow-duration="8s"></div>
+            </div>
+        </div>
+        -->
+       <header>               
+
+        <!-- ===========================
+        HERO AREA
+        =========================== -->
+        <div id="hero"> 
+        <p align="center"><a href="/"><img src="/img/photocartoon.png" width="390px" height="71px"></a></p>          
+            <div class="container herocontent">               
+                <h2><b>FREE Photo Cartoon Converter<b></h2>                
+                <h4>PhotoCartoon.net is a free online service that allows you to convert your photos into cartoons, paintings, drawings, caricatures and apply many other beautiful effects. Upload your photo, click on <b>"CARTOONIZE"</b> and choose the effect to apply to the image. Finally download and share it.<br />Choose effects type between:   >> <a href="https://www.photocartoon.net/"> PHOTO CARTOON CONVERTER </a> << and >> <a href="https://www.photocartoon.net/photo-effects/"> PHOTO FRAMES & EFFECTS </a> <<
+				</h4>     
+            </div>
+
+            <link rel="stylesheet" href="/css/cartoon-form.css">    
+
+
+            <div class="heroshot wow bounceInUp" data-wow-duration="4s" id="cartoon_form">            
+                <div id="settings">
+                    <p>Convert Now your photos into cartoons and paintings with <b>PhotoCartoon.net</b></p>
+                    <p>Select your photo from your computer or upload it from URL and finally click on <b>CARTOONIZE</b> button</p>
+                    <p>
+                        <span><input class="form_ctrl" type="radio" id="from_disk" name="source" value="disk" checked>&nbsp;Upload from disk</span> 
+                        <span><input class="form_ctrl" type="radio" id="from_url" name="source" value="url">&nbsp;Upload from URL</span>
+                    </p>
+                    <p id="from_disk_controls"><input class="form_ctrl" type="file" id="image_file" name="image_file" accept="image/png,image/x-png,image/jpeg,image/gif,image/bmp" onchange="Filevalidation()" /></p>
+                    <p id="from_url_controls"><input class="form_ctrl" type="text" id="image_url" name="image_url" placeholder="Insert here image URL"/></p>
+                    <p><img id="progress-img" data-src="/img/progress.gif" alt="progress bar" class="lazyload"></p>          
+
+                    
+                    <p><span id="alert">Please choose image!</span></p>
+                    <p><button id="cartoonize" class="btn btn-info"><b>CARTOONIZE ONLINE</b></button></p>
+					<div id="linkwin" style="padding:0px;"><img src="download.png" width="32px"></img><a href="https://www.download77.net/download/Photocartoon.exe">FREE DOWNLOAD PHOTO CARTOON SOFTWARE FOR WINDOWS</a><img src="download.png" width="32px"></img></div> 
+                </div>
+				
+
+                <div id="banner">
+                    <img data-src="/img/before_after.gif" class="lazyload" alt="Cartoon" />
+                    
+                </div>
+            </div>
+            <div class="heroshot wow bounceInUp" data-wow-duration="4s" id="cartoon_form_results">            
+                <div id="cartoon">
+                    <p>
+                        <img id="result_img" data="0" src="/img/banner.jpg" alt="Effect final image" />
+                        <canvas id="cartoonCanvas"></canvas>
+                        <img src="/img/rotate.png" alt="Rotate image" title="Rotate image" id="rotate" />
+                        <img src="/img/zoom-in.png" alt="Zoom in" title="Zoom in" id="zoom-in" />
+                        <img src="/img/zoom-out.png" alt="Zoom out" title="Zoom out" id="zoom-out" />
+                    </p>
+
+                    <p id="cartoon_buttons">
+                     <button id="repeat_btn" class="btn btn-info"><img src="/img/repeat.png" alt="repeat cartoonize" />&nbsp;Exit&nbsp;</button>
+                        <button id="download_btn" class="btn btn-info"><img src="/img/download.png" alt="download cartoon" />&nbsp;DOWNLOAD &nbsp;</button>
+                        <button id="share_facebook_btn" class="btn btn-info"><img src="/img/facebook.png" alt="Share on Facebook" />&nbsp;&nbsp;</button>
+                        <!-- <button id="share_instagram_btn"><img src="/img/instagram.png" alt="Share on Instagram" />&nbsp;share&nbsp;</button> -->
+                        <button id="share_twitter_btn" class="btn btn-info"><img src="/img/twitter.png" alt="Share on Twitter" />&nbsp;&nbsp;</button>
+                        <button id="share_email_btn" class="btn btn-info"><img src="/img/email.png" alt="Send Via Email" />&nbsp;&nbsp;</button>
+						<!--<button id="share_painterest_btn"><img src="/img/painterest.png" alt="Share on Painterest" />&nbsp;Share&nbsp;</button>-->
+						<button id="cart_btn" class="btn btn-info"><img src="/img/cart.png" alt="remove watermark" />&nbsp;REMOVE WATERMARK&nbsp;</button><br />
+						
+                        <!-- <button id="share_painterest_btn"><img src="/img/painterest.png" alt="Share on Painterest" />&nbsp;Share&nbsp;</button><br /> -->
+						<button onclick="location.href='https://www.download77.net/download/Photocartoon.exe'" type="button" id="savehdbtn" class="btn btn-info" style="margin-top:8px">&nbsp;Save in HD Resolution with PhotoCartoon Software for Windows&nbsp;</button>
+						
+						
+						<br />
+                    </p>
+					
+                </div>
+
+
+                <div  id="progress">
+                    <img src="/img/progress.gif">
+                </div>
+                
+                
+            </div>
+            
+
+            
+            
+            <div id="other_effects">
+                <div id="other_effects_left">
+
+                </div>
+               
+            </div>
+            <div id="tools">
+                <div class="title">Text</div>
+                <div class="ctrl-row" id="font-picker-row">
+                    <input id="font-picker" type="text">
+                </div>
+                <div class="ctrl-row" id="font-size">
+                    <label>Font size</label>
+                    <input type="text" id="font-size-value" >
+                    <div id="font-size-range"></div>
+                </div>
+                <div class="ctrl-row" id="color-picker">
+                    <label>Color</label>
+                    <input type="text" class="font-color" value="#000">
+                </div>
+                <div class="ctrl-row" id="background">
+                    <input type="checkbox" id="use-backround">
+                    <label>Background</label>
+                    <input type="text" class="font-background-color" value="#fff">
+                    
+                </div>
+                <div class="ctrl-row" id="text-row">
+                    <label>Text</label>
+                    <input type="text" id="the_text" placeholder="Enter your text here">
+                </div>
+                <div class="buttons">
+                    <button id="text_add">Add text</button>
+                    <button id="text_delete">Delete</button>
+                </div>
+                <div class="title">Equilazer</div>
+                <div id="equalizer">
+                    <div class="ctrl-row" id="brightness">
+                        <label>Brightness</label>
+                        <input type="text" id="brightness-value" class="eq-value">
+                        <div class="range-ctrl" id="brightness-range"></div>
+                    </div>
+                    <div class="ctrl-row" id="contrast">
+                        <label>Contrast</label>
+                        <input type="text" id="contrast-value" class="eq-value">
+                        <div class="range-ctrl" id="contrast-range"></div>
+                    </div>
+                    <div class="ctrl-row" id="saturation">
+                        <label>Saturation</label>
+                        <input type="text" id="saturation-value" class="eq-value">
+                        <div class="range-ctrl" id="saturation-range"></div>
+                    </div>
+                    <div class="ctrl-row" id="Hue">
+                        <label>Hue</label>
+                        <input type="text" id="hue-value" class="eq-value">
+                        <div class="range-ctrl" id="hue-range"></div>
+                    </div>
+                    <div class="buttons">
+                        <button id="equalizer_apply">Apply</button>
+                        <button id="equalizer_cancel">Cancel</button>
+                    </div>     
+                        <div style="margin:5px">
+                         <button id="download_btn2">Download</button>
+                         </div>
+                   
+                </div>
+			
+            </div>        
+
+        </div>
+        <!--HERO AREA END-->        
+        
+        
+        <!-- ===========================
+         NAVBAR START
+         =========================== -->
+         
+
+ 
+ 
+         </div>
+  
+     </footer><!-- FOOTER END -->
+    
+        <!-- Include all compiled plugins (below), or include individual files as needed      -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    
+    <!--Other necessary scripts-->
+    <!--
+    <script src="/js/jquery.nicescroll.js"></script>
+    -->
+   
+    <script src="/js/jquery.jribbble-1.0.1.ugly.js"></script>
+       
+    <script src="/js/drifolio.js"></script>
+<!--
+    <script src="/js/wow.min.js"></script>
+    <script>new WOW().init();</script>    
+-->    
+   
+
+            <script src="/js/original.js"></script>
+            <script src="/js/effect.js"></script>
+             <script src="/js/cartoon-form.js"></script> 
+            <!-- font select plugin-->
+            <link rel="stylesheet" href="/plugins/font-select/css/jquery.fontselect.min.css">    
+            <script src="/plugins/font-select/js/jquery.fontselect.min.js"></script>
+            <!-- rangeslider plugin-->
+            <script src="/plugins/rangeslider/js/rangeslider.js"></script>
+            <link href="/plugins/rangeslider/css/rangeslider.css" rel="stylesheet">
+            <!-- color picker plugin-->
+            <link rel="stylesheet" href="/plugins/color-picker/css/asColorPicker.css">
+            <script src="/plugins/color-picker/js/jquery-asColor.js"></script>
+            <script src="/plugins/color-picker/js/jquery-asGradient.js"></script>
+            <script src="/plugins/color-picker/js/jquery-asColorPicker.js"></script>            
+            <script src="/js/text-effect.js"></script>
+            <script src="/js/equalizer.js"></script>
+            <script src="/js/canvasManager.js"></script>
+            <script src="/js/tools.js"></script>       
+ <script>var effects = [{"name":"Cartoon", "script":"/effects/cartoon02.php", "ctrl":null},{"name":"Cartoon 02", "script":"/effects/Cartoon002.php", "ctrl":null},{"name":"NewCartoon", "script":"/effects/NewCartoon.php", "ctrl":null},{"name":"Cartoon Real1", "script":"/effects/cartoon-real1.php", "ctrl":null},{"name":"2D Cartoon", "script":"/effects/2d-cartoon.php", "ctrl":null},{"name":"Cartoon Z", "script":"/effects/cartoonZ.php", "ctrl":null},{"name":"HD Face Cartoon", "script":"/effects/HD-Face-Cartoon.php", "ctrl":null},{"name":"Cartoon 01", "script":"/effects/cartoon01.php", "ctrl":null},{"name":"Cartoon Real5", "script":"/effects/cartoon-real5.php", "ctrl":null},{"name":"Christmas Cartoon", "script":"/effects/christmas-cartoon.php", "ctrl":null},{"name":"Simpsons", "script":"/effects/simpson.php", "ctrl":null},{"name":"Calendar 2024", "script":"/effects/2023.php", "ctrl":null},{"name":"Simpson2", "script":"/effects/simpson2.php", "ctrl":null},{"name":"Cartoon Real4", "script":"/effects/cartoon-real4.php", "ctrl":null},{"name":"Disney2D", "script":"/effects/Disney2D.php", "ctrl":null},{"name":"Barbie", "script":"/effects/barbie.php", "ctrl":null},{"name":"Disney3D", "script":"/effects/Disney3D.php", "ctrl":null},{"name":"Grungy", "script":"/effects/grungy.php", "ctrl":null},{"name":"Sketcher", "script":"/effects/sketcher.php", "ctrl":null},{"name":"Sketch", "script":"/effects/sketch.php", "ctrl":null},{"name":"Magic Cartoon", "script":"/effects/magic-cartoon.php", "ctrl":null},{"name":"Photo Cartoon", "script":"/effects/Photo-Cartoon.php", "ctrl":null},{"name":"Sketch02", "script":"/effects/sketch02.php", "ctrl":null},{"name":"Warm Cartoon", "script":"/effects/warm-cartoon.php", "ctrl":null},{"name":"Sketch03", "script":"/effects/sketching.php", "ctrl":null},{"name":"Art Cartoon", "script":"/effects/art-cartoon.php", "ctrl":null},{"name":"Toon", "script":"/effects/toon01.php", "ctrl":null},{"name":"Toon Cloudy", "script":"/effects/toon02.php", "ctrl":null},{"name":"Toon Linearlight", "script":"/effects/toon04.php", "ctrl":null},{"name":"Toon Vividlight", "script":"/effects/toon05.php", "ctrl":null},{"name":"Woman Full Body", "script":"/effects/bodycartoon2.php", "ctrl":null},{"name":"Men Full Body", "script":"/effects/bodycartoon1.php", "ctrl":null},{"name":"Toon Gain", "script":"/effects/toon06.php", "ctrl":null},{"name":"Toon Linearburn", "script":"/effects/toon07.php", "ctrl":null},{"name":"Toon Color", "script":"/effects/toon03.php", "ctrl":null},{"name":"Toonify", "script":"/effects/toonify.php", "ctrl":null},{"name":"Toonify2", "script":"/effects/toonify2.php", "ctrl":null},{"name":"Paint A", "script":"/effects/paintA.php", "ctrl":null},{"name":"Paint1", "script":"/effects/paint1.php", "ctrl":null},{"name":"Paint New A", "script":"/effects/paint-new-a.php", "ctrl":null},{"name":"Paint Point A", "script":"/effects/paint-point-a.php", "ctrl":null},{"name":"Toonizarro", "script":"/effects/toonizarro.php", "ctrl":null},{"name":"Licht", "script":"/effects/licht.php", "ctrl":null},{"name":"Toonizzarro02", "script":"/effects/toonizarro02.php", "ctrl":null},{"name":"Watercolor", "script":"/effects/water.php", "ctrl":null},{"name":"Coldots", "script":"/effects/rgbdots.php", "ctrl":null},{"name":"Colcells", "script":"/effects/colcells.php", "ctrl":null},{"name":"Emboss", "script":"/effects/emboss.php", "ctrl":null},{"name":"Cristal", "script":"/effects/cristal.php", "ctrl":null},{"name":"Vintage", "script":"/effects/vintage.php", "ctrl":null},{"name":"Caricature Smile", "script":"/effects/caricature-smile-a.php", "ctrl":null},{"name":"Caricature Grottesque", "script":"/effects/caricature-gro.php", "ctrl":null},{"name":"Caricature Troll", "script":"/effects/caricature-troll-a.php", "ctrl":null},{"name":"Caricature Fat", "script":"/effects/caricature-fat-a.php", "ctrl":null},{"name":"Caricature Alien", "script":"/effects/caricature-alien-a.php", "ctrl":null},{"name":"Dave Hill", "script":"/effects/photolab-dave-hill.php", "ctrl":null},{"name":"Neon", "script":"/effects/photolab-neon.php", "ctrl":null},{"name":"Old Photo", "script":"/effects/photolab-old-photo.php", "ctrl":null},{"name":"Plumbago", "script":"/effects/photolab-plumbago.php", "ctrl":null},{"name":"Rain", "script":"/effects/photolab-rain.php", "ctrl":null},{"name":"Sketch HD", "script":"/effects/photolab-sketch.php", "ctrl":null},{"name":"Snow", "script":"/effects/photolab-snow.php", "ctrl":null},{"name":"Underwater", "script":"/effects/photolab-underwater.php", "ctrl":null},{"name":"Van Gogh", "script":"/effects/photolab-van-gogh.php", "ctrl":null},{"name":"Vintage Effect", "script":"/effects/photolab-vintage.php", "ctrl":null},{"name":"Glamour", "script":"/effects/photolab-glamour.php", "ctrl":null},{"name":"Vogue", "script":"/effects/photolab-vogue.php", "ctrl":null},{"name":"Pen Drawing", "script":"/effects/photolab-pen.php", "ctrl":null},{"name":"Pastel Drawing", "script":"/effects/photolab-pastel.php", "ctrl":null},{"name":"Graffiti", "script":"/effects/photolab-graffiti.php", "ctrl":null},{"name":"Dipinto", "script":"/effects/photolab-dipinto.php", "ctrl":null},{"name":"Pencil Color", "script":"/effects/photolab-pencil.php", "ctrl":null},{"name":"Halloween2", "script":"/effects/halloween2.php", "ctrl":null},{"name":"Halloween1", "script":"/effects/halloween1.php", "ctrl":null},];</script>
+       
+
+
+
+ <script src="/js/lazysizes.min.js" async></script>
+
+ <script> 
+    Filevalidation = () => { 
+        const fi = document.getElementById('image_file'); 
+        // Check if any file is selected. 
+        if (fi.files.length > 0) { 
+            for (const i = 0; i <= fi.files.length - 1; i++) { 
+  
+                const fsize = fi.files.item(i).size; 
+                const file = Math.round((fsize / 1024)); 
+                // The size of the file. 
+                if (file >= 20000) { 
+                    alert("File too Big, please compress your file or select a file less than 20 MB"); 
+                       document.getElementById("image_file").value = null;
+                } else if (file < 1) { 
+                    alert( 
+                      "File too small or PDF corrupted, please select a file greater than 1kb");
+                      document.getElementById("image_file").value = null;
+                } else { 
+                  //  document.getElementById('size').innerHTML = '<b>'
+                  //  + file + '</b> KB'; 
+                } 
+            } 
+        } 
+    }
+    
+        var _URL = window.URL || window.webkitURL;
+
+$("#image_file").change(function(e) {
+    var file, img;
+
+
+    if ((file = this.files[0])) {
+        img = new Image();
+        img.onload = function() {
+           // alert(this.width + " " + this.height);
+           if (this.width>10000) {
+            alert("File resolution too high, please resize it");
+            document.getElementById("image_file").value = null;
+           }
+        };
+        img.onerror = function() {
+            alert( "not a valid file: " + file.type);
+            document.getElementById("image_file").value = null;
+        };
+        img.src = _URL.createObjectURL(file);
+
+
+    }
+
+}); 
+</script>    
+  
+  <script>
+document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+    
+  </body>
+</html>
