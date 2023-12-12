@@ -227,7 +227,7 @@ $('#download_btn').click(function() {
   // Creazione di un elemento di form dinamico
   let form = document.createElement('form');
   form.method = 'POST';
-  form.action = 'https://photocartoon.net/download.php';
+  form.action = 'https://amirgreenberg.github.io/cartoon/download.php';
   form.target = '_blank';
 
   // Aggiunta dei parametri come campi nascosti nel form
@@ -253,13 +253,13 @@ $('#download_btn').click(function() {
     
         $('#download_btn2').click(function(){
         let session_id = $('#result_img').attr('data');
-        window.open('https://photocartoon.net/download2.php?id='+session_id+'&effect='+document.getElementById("result_img").src.split("/").pop().split('?')[0]);
+        window.open('https://amirgreenberg.github.io/cartoon/download2.php?id='+session_id+'&effect='+document.getElementById("result_img").src.split("/").pop().split('?')[0]);
     });
     
 
     $('#cart_btn').click(function(){
 let session_id = $('#result_img').attr('data');
-       window.open('https://photocartoon.net/license/buy.php?id='+session_id);
+       window.open('https://amirgreenberg.github.io/cartoon/license/buy.php?id='+session_id);
     });
 
 
@@ -268,9 +268,9 @@ let session_id = $('#result_img').attr('data');
     });
     $('#share_facebook_btn').click(function(){
         let session_id = $('#result_img').attr('data');
-       // let url = 'https://photocartoon.net/'+session_id+'/photo-cartoon.jpg'
-      //  let url = 'https://photocartoon.net/'+session_id+'/'+document.getElementById("result_img").src.split("/").pop().split('?')[0];
-        let url = 'https://photocartoon.net/view.php?id='+session_id+'&effect='+document.getElementById("result_img").src.split("/").pop().split('?')[0];
+       // let url = 'https://amirgreenberg.github.io/cartoon/'+session_id+'/photo-cartoon.jpg'
+      //  let url = 'https://amirgreenberg.github.io/cartoon/'+session_id+'/'+document.getElementById("result_img").src.split("/").pop().split('?')[0];
+        let url = 'https://amirgreenberg.github.io/cartoon/view.php?id='+session_id+'&effect='+document.getElementById("result_img").src.split("/").pop().split('?')[0];
         window.open('https://www.facebook.com/sharer/sharer.php?u='+url);
     });
 
@@ -278,28 +278,28 @@ let session_id = $('#result_img').attr('data');
 
     $('#share_instagram_btn').click(function(){
         let session_id = $('#result_img').attr('data');
-     //   let url = 'https://photocartoon.net/'+session_id+'/photo-cartoon.jpg'
-    // let url = 'https://photocartoon.net/'+session_id+'/'+document.getElementById("result_img").src.split("/").pop().split('?')[0];
-         let url = 'https://photocartoon.net/view.php?id='+session_id+'&effect='+document.getElementById("result_img").src.split("/").pop().split('?')[0];
+     //   let url = 'https://amirgreenberg.github.io/cartoon/'+session_id+'/photo-cartoon.jpg'
+    // let url = 'https://amirgreenberg.github.io/cartoon/'+session_id+'/'+document.getElementById("result_img").src.split("/").pop().split('?')[0];
+         let url = 'https://amirgreenberg.github.io/cartoon/view.php?id='+session_id+'&effect='+document.getElementById("result_img").src.split("/").pop().split('?')[0];
         window.open('https://www.facebook.com/sharer/sharer.php?u='+url);
     });
     $('#share_twitter_btn').click(function(){
         let session_id = $('#result_img').attr('data');
-       // let url = 'https://photocartoon.net/'+session_id+'/photo-cartoon.jpg'
-     //  let url = 'https://photocartoon.net/'+session_id+'/'+document.getElementById("result_img").src.split("/").pop().split('?')[0];
-          let url = 'https://photocartoon.net/view.php?id='+session_id+'&effect='+document.getElementById("result_img").src.split("/").pop().split('?')[0];
+       // let url = 'https://amirgreenberg.github.io/cartoon/'+session_id+'/photo-cartoon.jpg'
+     //  let url = 'https://amirgreenberg.github.io/cartoon/'+session_id+'/'+document.getElementById("result_img").src.split("/").pop().split('?')[0];
+          let url = 'https://amirgreenberg.github.io/cartoon/view.php?id='+session_id+'&effect='+document.getElementById("result_img").src.split("/").pop().split('?')[0];
         window.open('https://api.whatsapp.com/send?text='+encodeURIComponent(url));
     });
         $('#share_email_btn').click(function(){
         let session_id = $('#result_img').attr('data');
-    // let url = 'https://photocartoon.net/'+session_id+'/'+document.getElementById("result_img").src.split("/").pop().split('?')[0];
-     let url = 'https://photocartoon.net/view.php?id='+session_id+'&effect='+document.getElementById("result_img").src.split("/").pop().split('?')[0];
+    // let url = 'https://amirgreenberg.github.io/cartoon/'+session_id+'/'+document.getElementById("result_img").src.split("/").pop().split('?')[0];
+     let url = 'https://amirgreenberg.github.io/cartoon/view.php?id='+session_id+'&effect='+document.getElementById("result_img").src.split("/").pop().split('?')[0];
      
-        window.open('https://photocartoon.net/mail/form.php?photourl='+url);
+        window.open('https://amirgreenberg.github.io/cartoon/mail/form.php?photourl='+url);
     });
     $('#share_painterest_btn').click(function(){
         let session_id = $('#result_img').attr('data');
-        let image = 'https://photocartoon.net/'+session_id+'/photo-cartoon.jpg'
+        let image = 'https://amirgreenberg.github.io/cartoon/'+session_id+'/photo-cartoon.jpg'
         window.open('http://pinterest.com/pin/create/button/?url='+encodeURIComponent('http://photocartoon.net')+
                 '&media='+encodeURIComponent(image)+
                 '&description='+encodeURIComponent('Photo Cartoon'));
