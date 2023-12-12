@@ -300,9 +300,14 @@ let session_id = $('#result_img').attr('data');
     $('#share_painterest_btn').click(function(){
         let session_id = $('#result_img').attr('data');
         let image = 'https://amirgreenberg.github.io/cartoon/'+session_id+'/photo-cartoon.jpg'
-        window.open('http://pinterest.com/pin/create/button/?url='+encodeURIComponent('http://photocartoon.net')+
-                '&media='+encodeURIComponent(image)+
-                '&description='+encodeURIComponent('Photo Cartoon'));
+        window.open(
+            'http://pinterest.com/pin/create/button/?url=' +
+                encodeURIComponent('https://amirgreenberg.github.io/cartoon/') +
+                '&media=' +
+                encodeURIComponent(image) +
+                '&description=' +
+                encodeURIComponent('Photo Cartoon')
+        )
     });
 
 
